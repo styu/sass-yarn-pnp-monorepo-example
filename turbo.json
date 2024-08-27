@@ -1,0 +1,19 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build", "build-transpile", "build-typecheck"]
+    },
+    "build-transpile": {
+      "outputs": ["build/main/**"],
+      "dependsOn": ["^build-transpile"]
+    },
+    "build-typecheck": {
+      "outputs": ["build/types/**"],
+      "dependsOn": ["^build-typecheck"]
+    },
+    "lint": {},
+    "lint-fix": {},
+    "clean": {}
+  }
+}
