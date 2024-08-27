@@ -9,12 +9,19 @@
     }
   },
   "scripts": {
+    "assemble": "echo 'Done'",
+    "assemble-prepare": "mkdir -p dist/main && mkdir -p dist/types",
+    "assemble-postcss-main": "cp build/css/**/*.{css*,js,js*} dist/main",
+    "assemble-postcss-types": "cp build/css/**/*.d.ts* dist/types",
+    "assemble-typescript-main": "cp build/typescript/main/**/*.js* dist/main",
+    "assemble-typescript-types": "cp build/typescript/types/**/*.d.ts* dist/types",
     "build": "echo 'Done'",
-    "build-transpile": "swc ./src --config-file .swcrc --out-dir dist/main --strip-leading-paths",
+    "build-postcss": "postcss src/**/*.scss --base src --dir build/css --ext css --config .",
+    "build-transpile": "swc ./src --config-file .swcrc --out-dir build/typescript/main --strip-leading-paths",
     "build-typecheck": "tsc -p tsconfig.json",
-    "lint": "prettier --check 'src/**/*.ts'",
-    "lint-fix": "prettier --write 'src/**/*.ts'",
-    "clean": "rm -rf dist"
+    "lint": "prettier --check 'src/**/*.ts*'",
+    "lint-fix": "prettier --write 'src/**/*.ts*'",
+    "clean": "rm -rf dist && rm -rf build"
   },
   "dependencies": {
     "@example/theme": "workspace:*",

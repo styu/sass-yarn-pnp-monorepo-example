@@ -12,8 +12,8 @@
     "build": "echo 'Done'",
     "build-transpile": "swc ./src --config-file .swcrc --out-dir dist/main --strip-leading-paths",
     "build-typecheck": "tsc -p tsconfig.json",
-    "lint": "prettier --check 'src/**/*.ts'",
-    "lint-fix": "prettier --write 'src/**/*.ts'",
+    "lint": "prettier --check 'src/**/*.ts*'",
+    "lint-fix": "prettier --write 'src/**/*.ts*'",
     "clean": "rm -rf dist"
   },
   "dependencies": {

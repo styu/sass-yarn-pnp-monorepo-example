@@ -47,6 +47,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["prettier", "npm:3.3.3"],\
           ["turbo", "npm:2.0.14"],\
           ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"]\
         ],\
@@ -2733,6 +2734,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["sass-yarn-pnp-monorepo-example", "workspace:."],\
+          ["prettier", "npm:3.3.3"],\
           ["turbo", "npm:2.0.14"],\
           ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"]\
         ],\
