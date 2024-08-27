@@ -2241,6 +2241,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sass-yarn-pnp-monorepo-example@workspace:."
   dependencies:
+    prettier: "npm:^3.3.3"
     turbo: "npm:^2.0.14"
     typescript: "npm:~5.5.3"
   languageName: unknown

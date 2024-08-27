@@ -8,11 +8,10 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
-    "outDir": "dist/types",
+    "outDir": "build/typescript/types",
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "rootDirs": ["build/css", "src"]
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src/**/*"]
 }
