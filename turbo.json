@@ -1,14 +1,6 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
-    "build": {
-      "dependsOn": [
-        "^assemble",
-        "build-transpile",
-        "build-typecheck",
-        "build-postcss"
-      ]
-    },
     "build-transpile": {
       "outputs": ["build/typescript/main/**"],
       "dependsOn": ["^build-transpile"]
@@ -21,13 +13,15 @@
       "outputs": ["build/css/**"],
       "dependsOn": ["^build-postcss"]
     },
-    "assemble": {
+    "build": {
       "dependsOn": [
+        "^build",
         "assemble-prepare",
         "assemble-postcss-main",
         "assemble-postcss-types",
         "assemble-typescript-main",
-        "assemble-typescript-types"
+        "assemble-typescript-types",
+        "assemble-webpack"
       ]
     },
     "assemble-postcss-main": {
@@ -42,6 +36,10 @@
     "assemble-typescript-types": {
       "dependsOn": ["assemble-prepare", "build-typecheck"]
     },
+    "assemble-webpack": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["^build"]
+    },
     "assemble-prepare": {},
     "lint": {},
     "lint-fix": {
@@ -49,6 +47,11 @@
     },
     "clean": {
       "cache": false
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["^build"]
     }
   }
 }
