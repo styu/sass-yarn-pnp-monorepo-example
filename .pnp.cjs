@@ -209,7 +209,6 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:52c6939c0ca557be9e69a3195caaf028a912116ad2d289617c420559a4f7ea92ab285280bfb5702374d3c5598c75ec82a7f03a611cd3200cf017f747be155c7e#npm:18.3.1"],\
           ["sass", "npm:1.77.8"],\
-          ["sass-loader", "virtual:b391f7972dbb092c06781596101c8a715334d361350b606837e07e14302272df83b2aefbafae99d3e882f8242a69e6cbea8212bb65aa1b5b0083074ddc04e9c4#npm:16.0.1"],\
           ["ts-loader", "virtual:b391f7972dbb092c06781596101c8a715334d361350b606837e07e14302272df83b2aefbafae99d3e882f8242a69e6cbea8212bb65aa1b5b0083074ddc04e9c4#npm:9.5.1"],\
           ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"],\
           ["webpack", "virtual:b391f7972dbb092c06781596101c8a715334d361350b606837e07e14302272df83b2aefbafae99d3e882f8242a69e6cbea8212bb65aa1b5b0083074ddc04e9c4#npm:5.94.0"],\
@@ -5643,45 +5642,6 @@ const RAW_RUNTIME_STATE =
           ["chokidar", "npm:3.6.0"],\
           ["immutable", "npm:4.3.7"],\
           ["source-map-js", "npm:1.2.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["sass-loader", [\
-      ["npm:16.0.1", {\
-        "packageLocation": "./.yarn/cache/sass-loader-npm-16.0.1-0d9dc804c0-ac841ea888.zip/node_modules/sass-loader/",\
-        "packageDependencies": [\
-          ["sass-loader", "npm:16.0.1"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:b391f7972dbb092c06781596101c8a715334d361350b606837e07e14302272df83b2aefbafae99d3e882f8242a69e6cbea8212bb65aa1b5b0083074ddc04e9c4#npm:16.0.1", {\
-        "packageLocation": "./.yarn/__virtual__/sass-loader-virtual-636fbd3d00/0/cache/sass-loader-npm-16.0.1-0d9dc804c0-ac841ea888.zip/node_modules/sass-loader/",\
-        "packageDependencies": [\
-          ["sass-loader", "virtual:b391f7972dbb092c06781596101c8a715334d361350b606837e07e14302272df83b2aefbafae99d3e882f8242a69e6cbea8212bb65aa1b5b0083074ddc04e9c4#npm:16.0.1"],\
-          ["@rspack/core", null],\
-          ["@types/node-sass", null],\
-          ["@types/rspack__core", null],\
-          ["@types/sass", null],\
-          ["@types/sass-embedded", null],\
-          ["@types/webpack", null],\
-          ["neo-async", "npm:2.6.2"],\
-          ["node-sass", null],\
-          ["sass", "npm:1.77.8"],\
-          ["sass-embedded", null],\
-          ["webpack", "virtual:b391f7972dbb092c06781596101c8a715334d361350b606837e07e14302272df83b2aefbafae99d3e882f8242a69e6cbea8212bb65aa1b5b0083074ddc04e9c4#npm:5.94.0"]\
-        ],\
-        "packagePeers": [\
-          "@rspack/core",\
-          "@types/node-sass",\
-          "@types/rspack__core",\
-          "@types/sass-embedded",\
-          "@types/sass",\
-          "@types/webpack",\
-          "node-sass",\
-          "sass-embedded",\
-          "sass",\
-          "webpack"\
         ],\
         "linkType": "HARD"\
       }]\

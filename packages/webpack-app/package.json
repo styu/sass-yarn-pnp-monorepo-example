@@ -30,7 +30,6 @@
     "postcss-typesafe-css-modules": "^0.0.1",
     "prettier": "^3.3.3",
     "sass": "^1.77.8",
-    "sass-loader": "~16.0.1",
     "ts-loader": "^9.5.1",
     "typescript": "~5.5.3",
     "webpack": "~5.94.0",
