@@ -1,0 +1,40 @@
+{
+  "name": "@example/webpack-app",
+  "scripts": {
+    "assemble": "echo 'Done'",
+    "build": "echo 'Done'",
+    "build-webpack": "NODE_ENV=production webpack --config webpack.config.js",
+    "dev": "webpack serve --watch --profile --color --progress --config webpack.config.js"
+  },
+  "dependencies": {
+    "@example/foo-lib": "workspace:*",
+    "@example/theme": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@csstools/postcss-sass": "^5.1.1",
+    "@example/prettier-config-default": "workspace:*",
+    "@swc/cli": "^0.4.0",
+    "@swc/core": "^1.7.5",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.18",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "~5.6.0",
+    "mini-css-extract-plugin": "^2.9.1",
+    "pnp-webpack-plugin": "^1.7.0",
+    "postcss": "^8.4.40",
+    "postcss-cli": "^11.0.0",
+    "postcss-loader": "^8.1.1",
+    "postcss-scss": "^4.0.9",
+    "postcss-typesafe-css-modules": "^0.0.1",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "sass-loader": "~16.0.1",
+    "ts-loader": "^9.5.1",
+    "typescript": "~5.5.3",
+    "webpack": "~5.94.0",
+    "webpack-cli": "~5.1.4",
+    "webpack-dev-server": "~5.0.4"
+  }
+}

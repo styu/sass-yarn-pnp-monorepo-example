@@ -5,9 +5,9 @@
     "packages/*"
   ],
   "scripts": {
-    "assemble": "turbo run assemble",
     "build": "turbo run build",
     "build-postcss": "turbo run build-postcss",
+    "dev": "turbo run dev",
     "lint": "turbo run lint",
     "lint-fix": "turbo run lint-fix",
     "clean": "turbo run clean"
