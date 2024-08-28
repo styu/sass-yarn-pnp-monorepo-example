@@ -97,6 +97,7 @@ __metadata:
   resolution: "@example/theme@workspace:packages/theme"
   dependencies:
     "@csstools/postcss-sass": "npm:^5.1.1"
+    "@example/prettier-config-default": "workspace:*"
     "@types/react": "npm:^18.2.61"
     "@types/react-dom": "npm:^18.2.18"
     postcss: "npm:^8.4.40"

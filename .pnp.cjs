@@ -171,6 +171,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@example/theme", "workspace:packages/theme"],\
           ["@csstools/postcss-sass", "virtual:ebd46dff4eca7c4a19f7dee359298071a6d3dd1969b4ac75f36424625e5377a38494a0e313fd93287acd7de7aa03e4d45e4dd026585b60aee9ab2d2421dcce1e#npm:5.1.1"],\
+          ["@example/prettier-config-default", "workspace:packages/prettier-config-default"],\
           ["@types/react", "npm:18.3.4"],\
           ["@types/react-dom", "npm:18.3.0"],\
           ["postcss", "npm:8.4.41"],\
