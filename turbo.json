@@ -13,9 +13,6 @@
       "outputs": ["build/css/**"],
       "dependsOn": ["^build-postcss"]
     },
-    "build-webpack": {
-      "outputs": ["dist/**"]
-    },
     "build": {
       "dependsOn": [
         "^build",
@@ -24,7 +21,7 @@
         "assemble-postcss-types",
         "assemble-typescript-main",
         "assemble-typescript-types",
-        "build-webpack"
+        "assemble-webpack"
       ]
     },
     "assemble-postcss-main": {
@@ -38,6 +35,10 @@
     },
     "assemble-typescript-types": {
       "dependsOn": ["assemble-prepare", "build-typecheck"]
+    },
+    "assemble-webpack": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["^build"]
     },
     "assemble-prepare": {},
     "lint": {},
