@@ -1,8 +1,10 @@
 {
   "name": "@example/theme",
+  "styles": "./src/theme.scss",
+  "main": "./src/theme.scss",
   "exports": {
     ".": {
-      "sass": "./src/theme.scss"
+      "default": "./src/theme.scss"
     }
   },
   "scripts": {

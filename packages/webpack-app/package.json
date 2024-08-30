@@ -2,8 +2,8 @@
   "name": "@example/webpack-app",
   "scripts": {
     "assemble": "echo 'Done'",
+    "assemble-webpack": "NODE_ENV=production webpack --config webpack.config.js",
     "build": "echo 'Done'",
-    "build-webpack": "NODE_ENV=production webpack --config webpack.config.js",
     "dev": "webpack serve --watch --profile --color --progress --config webpack.config.js"
   },
   "dependencies": {
@@ -22,12 +22,12 @@
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "~5.6.0",
     "mini-css-extract-plugin": "^2.9.1",
+    "pnp-sass-importer": "workspace:*",
     "pnp-webpack-plugin": "^1.7.0",
     "postcss": "^8.4.40",
     "postcss-cli": "^11.0.0",
     "postcss-loader": "^8.1.1",
     "postcss-scss": "^4.0.9",
-    "postcss-typesafe-css-modules": "^0.0.1",
     "prettier": "^3.3.3",
     "sass": "^1.77.8",
     "ts-loader": "^9.5.1",

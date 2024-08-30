@@ -3,15 +3,15 @@
   "tasks": {
     "build-transpile": {
       "outputs": ["build/typescript/main/**"],
-      "dependsOn": ["^build-transpile"]
+      "dependsOn": ["^build"]
     },
     "build-typecheck": {
       "outputs": ["build/typescript/types/**"],
-      "dependsOn": ["^build-typecheck", "build-postcss"]
+      "dependsOn": ["^build", "build-postcss"]
     },
     "build-postcss": {
       "outputs": ["build/css/**"],
-      "dependsOn": ["^build-postcss"]
+      "dependsOn": ["^build"]
     },
     "build": {
       "dependsOn": [
@@ -31,16 +31,20 @@
       "dependsOn": ["assemble-prepare", "build-postcss"]
     },
     "assemble-typescript-main": {
+      "outputs": ["dist/main/**/*.js*"],
       "dependsOn": ["assemble-prepare", "build-transpile"]
     },
     "assemble-typescript-types": {
+      "outputs": ["dist/types/**/*.d.ts*"],
       "dependsOn": ["assemble-prepare", "build-typecheck"]
     },
     "assemble-webpack": {
       "outputs": ["dist/**"],
       "dependsOn": ["^build"]
     },
-    "assemble-prepare": {},
+    "assemble-prepare": {
+      "cache": false
+    },
     "lint": {},
     "lint-fix": {
       "cache": false

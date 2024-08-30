@@ -1,4 +1,8 @@
+@use "@example/theme" as theme;
+
 .header {
+  color: theme.$secondary-color;
   display: flex;
   justify-content: space-between;
+  max-width: theme.$page-width;
 }

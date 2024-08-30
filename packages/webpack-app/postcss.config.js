@@ -1,12 +1,12 @@
 /** @type {import('postcss-load-config').Config} */
-const sass = require("sass");
+
+const legacyPnpImporter = require("pnp-sass-importer/legacy").default;
 
 module.exports = {
   syntax: require("postcss-scss"),
   plugins: [
     require("@csstools/postcss-sass")({
-      importers: [new sass.NodePackageImporter()],
+      importer: legacyPnpImporter(__dirname),
     }),
-    require("postcss-typesafe-css-modules"),
   ],
 };
