@@ -72,7 +72,7 @@ __metadata:
     "@swc/core": "npm:^1.7.5"
     "@types/react": "npm:^18.2.61"
     "@types/react-dom": "npm:^18.2.18"
-    pnp-sass-importer: "workspace:*"
+    pnp-sass-importer: "npm:^0.2.0"
     postcss: "npm:^8.4.40"
     postcss-cli: "npm:^11.0.0"
     postcss-scss: "npm:^4.0.9"
@@ -125,7 +125,7 @@ __metadata:
     css-loader: "npm:^7.1.2"
     html-webpack-plugin: "npm:~5.6.0"
     mini-css-extract-plugin: "npm:^2.9.1"
-    pnp-sass-importer: "workspace:*"
+    pnp-sass-importer: "npm:^0.2.0"
     pnp-webpack-plugin: "npm:^1.7.0"
     postcss: "npm:^8.4.40"
     postcss-cli: "npm:^11.0.0"
@@ -665,22 +665,6 @@ __metadata:
   dependencies:
     undici-types: "npm:~6.19.2"
   checksum: 10c0/45aa75c5e71645fac42dced4eff7f197c3fdfff6e8a9fdacd0eb2e748ff21ee70ffb73982f068a58e8d73b2c088a63613142c125236cdcf3c072ea97eada1559
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^20.14.11":
-  version: 20.16.2
-  resolution: "@types/node@npm:20.16.2"
-  dependencies:
-    undici-types: "npm:~6.19.2"
-  checksum: 10c0/74fac185dbd2c6b301cde75747c1cd6c9ca1ad7266147ea107a798837f40b8a05991177ebd7925fc7450d51334096259d186afad6e0d22864b7c97f8afef6ba7
-  languageName: node
-  linkType: hard
-
-"@types/pnpapi@npm:^0.0.5":
-  version: 0.0.5
-  resolution: "@types/pnpapi@npm:0.0.5"
-  checksum: 10c0/2ade69b20d0ad5d16e6f709b1a40a8c43034ae5e8ca3b979a7fc7c26fbf0cc75791b7e8539f84e98c0e910b9c31d805fb420840e73482c6ed7bba9760ee938be
   languageName: node
   linkType: hard
 
@@ -4115,21 +4099,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pnp-sass-importer@workspace:*, pnp-sass-importer@workspace:packages/pnp-sass-importer":
-  version: 0.0.0-use.local
-  resolution: "pnp-sass-importer@workspace:packages/pnp-sass-importer"
+"pnp-sass-importer@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "pnp-sass-importer@npm:0.2.0"
   dependencies:
-    "@swc/cli": "npm:^0.4.0"
-    "@swc/core": "npm:^1.7.5"
-    "@types/node": "npm:^20.14.11"
-    "@types/pnpapi": "npm:^0.0.5"
     "@yarnpkg/fslib": "npm:~3.1.0"
     "@yarnpkg/libzip": "npm:~3.1.0"
-    prettier: "npm:^3.3.3"
     sass: "npm:~1.77.8"
-    typescript: "npm:~5.5.3"
-  languageName: unknown
-  linkType: soft
+  checksum: 10c0/ad9f97379554f81696d35646f63736cac392b183e1706dd4e618f973cca4bad4079acd247d5e58eb11012b1a00c323cdcd720624d01e3e702f91cebe2a4d9d5e
+  languageName: node
+  linkType: hard
 
 "pnp-webpack-plugin@npm:^1.7.0":
   version: 1.7.0
