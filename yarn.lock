@@ -72,6 +72,7 @@ __metadata:
     "@swc/core": "npm:^1.7.5"
     "@types/react": "npm:^18.2.61"
     "@types/react-dom": "npm:^18.2.18"
+    pnp-sass-importer: "npm:^0.2.0"
     postcss: "npm:^8.4.40"
     postcss-cli: "npm:^11.0.0"
     postcss-scss: "npm:^4.0.9"
@@ -124,12 +125,12 @@ __metadata:
     css-loader: "npm:^7.1.2"
     html-webpack-plugin: "npm:~5.6.0"
     mini-css-extract-plugin: "npm:^2.9.1"
+    pnp-sass-importer: "npm:^0.2.0"
     pnp-webpack-plugin: "npm:^1.7.0"
     postcss: "npm:^8.4.40"
     postcss-cli: "npm:^11.0.0"
     postcss-loader: "npm:^8.1.1"
     postcss-scss: "npm:^4.0.9"
-    postcss-typesafe-css-modules: "npm:^0.0.1"
     prettier: "npm:^3.3.3"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -558,6 +559,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/emscripten@npm:^1.39.6":
+  version: 1.39.13
+  resolution: "@types/emscripten@npm:1.39.13"
+  checksum: 10c0/99c314418b6fbe113c4c81dc89501bdf723020d1de262a36a4e45236b268dcec3deab104e3a7d3569e6d7c5c942de30c9c6d77b93170c1bcaa85620c7ee4c2ba
+  languageName: node
+  linkType: hard
+
 "@types/estree@npm:^1.0.5":
   version: 1.0.5
   resolution: "@types/estree@npm:1.0.5"
@@ -959,6 +967,28 @@ __metadata:
   version: 4.2.2
   resolution: "@xtuc/long@npm:4.2.2"
   checksum: 10c0/8582cbc69c79ad2d31568c412129bf23d2b1210a1dfb60c82d5a1df93334da4ee51f3057051658569e2c196d8dc33bc05ae6b974a711d0d16e801e1d0647ccd1
+  languageName: node
+  linkType: hard
+
+"@yarnpkg/fslib@npm:^3.1.0, @yarnpkg/fslib@npm:~3.1.0":
+  version: 3.1.0
+  resolution: "@yarnpkg/fslib@npm:3.1.0"
+  dependencies:
+    tslib: "npm:^2.4.0"
+  checksum: 10c0/e327aaf73fe2fff442a71f045fe006f13931a09021b5b868a993a644d4950cd3c5589f1d58ee9e38390bca83705a30b649db7ae462fe704fdb6cdeb12ed2232a
+  languageName: node
+  linkType: hard
+
+"@yarnpkg/libzip@npm:~3.1.0":
+  version: 3.1.0
+  resolution: "@yarnpkg/libzip@npm:3.1.0"
+  dependencies:
+    "@types/emscripten": "npm:^1.39.6"
+    "@yarnpkg/fslib": "npm:^3.1.0"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    "@yarnpkg/fslib": ^3.1.0
+  checksum: 10c0/11e12724d916584e748dc3cb364840f3763799492108b39b008301b817e43689d34a68d7ecb1cab9610cc058aa5967e5088658774ae0fbe77a18b8cdb5ad382a
   languageName: node
   linkType: hard
 
@@ -4069,6 +4099,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pnp-sass-importer@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "pnp-sass-importer@npm:0.2.0"
+  dependencies:
+    "@yarnpkg/fslib": "npm:~3.1.0"
+    "@yarnpkg/libzip": "npm:~3.1.0"
+    sass: "npm:~1.77.8"
+  checksum: 10c0/ad9f97379554f81696d35646f63736cac392b183e1706dd4e618f973cca4bad4079acd247d5e58eb11012b1a00c323cdcd720624d01e3e702f91cebe2a4d9d5e
+  languageName: node
+  linkType: hard
+
 "pnp-webpack-plugin@npm:^1.7.0":
   version: 1.7.0
   resolution: "pnp-webpack-plugin@npm:1.7.0"
@@ -4671,7 +4712,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"sass@npm:^1.69.5, sass@npm:^1.77.8":
+"sass@npm:^1.69.5, sass@npm:^1.77.8, sass@npm:~1.77.8":
   version: 1.77.8
   resolution: "sass@npm:1.77.8"
   dependencies:
@@ -5356,7 +5397,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.0, tslib@npm:^2.0.3":
+"tslib@npm:^2.0.0, tslib@npm:^2.0.3, tslib@npm:^2.4.0":
   version: 2.7.0
   resolution: "tslib@npm:2.7.0"
   checksum: 10c0/469e1d5bf1af585742128827000711efa61010b699cb040ab1800bcd3ccdd37f63ec30642c9e07c4439c1db6e46345582614275daca3e0f4abae29b0083f04a6

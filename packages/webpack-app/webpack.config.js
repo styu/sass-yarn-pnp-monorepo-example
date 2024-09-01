@@ -36,7 +36,7 @@ module.exports = {
         },
       },
 
-      // All files with a '.scss' extension will be handled by 'sass-loader'
+      // All files with a '.scss' extension will be handled by 'postcss-loader'
       {
         test: /\.css$/,
         use: [
@@ -46,6 +46,21 @@ module.exports = {
             options: {
               modules: false,
             },
+          },
+        ],
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: require.resolve("css-loader"),
+            options: {
+              modules: true,
+            },
+          },
+          {
+            loader: require.resolve("postcss-loader"),
           },
         ],
       },
